@@ -21,13 +21,12 @@ func (p Human) GetName() string {
 
 // GetScore liefert den Punktestand des Spielers.
 func (p Human) GetScore() int {
-	// TODO
-	return 0
+	return p.Score
 }
 
 // IncrementScore erhöht den Punktestand des Spielers um eins.
 func (p *Human) IncrementScore() {
-	// TODO
+	p.Score++
 }
 
 // GetMove liefert einen Zug des Spielers.
